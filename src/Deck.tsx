@@ -14,10 +14,10 @@ type DeckAction =
   | { type: "removeCard"; value: string }
 
 interface DeckProps {
-
+  characterName: string
 }
 
-const initialState: DeckState = {selectedCards: []}
+const initialState: DeckState = {selectedCards: JSON.parse(localStorage.getItem("selectedCards") ?? "[]") || []}
 
 function reducer(state: DeckState, action: DeckAction): DeckState {
   switch (action.type) {
@@ -43,21 +43,34 @@ function reducer(state: DeckState, action: DeckAction): DeckState {
 export const Deck: React.FC<DeckProps> = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const selectedCards = useMemo(() => cards.filter(c => state.selectedCards.includes(c.name)), [state]);
-  const availableCards = useMemo(() => cards.filter(c => !state.selectedCards.includes(c.name)), [state]);
+  const dispatchAndSave = (value: DeckAction) => {
+    dispatch(value)
+    localStorage.setItem("selectedCards", JSON.stringify(state.selectedCards))
+  }
 
-  const addCard = (card: Card) => dispatch({type: "addCard", value: card.name});
-  const removeCard = (card: Card) => dispatch({type: "removeCard", value: card.name});
+  const selectedCards = useMemo(
+    () => cards.map(c => ({
+      ...c,
+      isSelected: state.selectedCards.includes(c.name)
+    })),
+    [state]
+  );
+
+  const addCard = (card: Card) => dispatchAndSave({type: "addCard", value: card.name});
+  const removeCard = (card: Card) => dispatchAndSave({type: "removeCard", value: card.name});
 
   return (
-    <div>
-      <div>
-        <div>Selected</div>
-        {selectedCards.map(n => <AbilityCard key={n.name} card={n} onSelect={removeCard}/>)}
+    <div className={"deck"}>
+      <div className={"deck-header"}>
+        Selected {state.selectedCards.length}
       </div>
-      <div>
-        <div>Available</div>
-        {availableCards.map(n => <AbilityCard key={n.name} card={n} onSelect={addCard}/>)}
+      <div className={"deck-cards"}>
+        {selectedCards.map(card =>
+          <AbilityCard key={card.name}
+                       card={card}
+                       isSelected={card.isSelected}
+                       onSelect={card.isSelected ? removeCard : addCard}/>
+        )}
       </div>
     </div>
   )

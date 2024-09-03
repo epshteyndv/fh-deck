@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useMemo, useReducer} from "react";
+import {useEffect, useMemo, useReducer} from "react";
 import {cards} from "./game-config.ts";
 import {Card} from "./models/Card.tsx";
 import {AbilityCard} from "./components/AbilityCard.tsx";
@@ -42,11 +42,10 @@ function reducer(state: DeckState, action: DeckAction): DeckState {
 
 export const Deck: React.FC<DeckProps> = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-
-  const dispatchAndSave = (value: DeckAction) => {
-    dispatch(value)
+  
+  useEffect(() => {
     localStorage.setItem("selectedCards", JSON.stringify(state.selectedCards))
-  }
+  }, [state])
 
   const selectedCards = useMemo(
     () => cards.map(c => ({
@@ -56,8 +55,8 @@ export const Deck: React.FC<DeckProps> = () => {
     [state]
   );
 
-  const addCard = (card: Card) => dispatchAndSave({type: "addCard", value: card.name});
-  const removeCard = (card: Card) => dispatchAndSave({type: "removeCard", value: card.name});
+  const addCard = (card: Card) => dispatch({type: "addCard", value: card.name});
+  const removeCard = (card: Card) => dispatch({type: "removeCard", value: card.name});
 
   return (
     <div className={"deck"}>

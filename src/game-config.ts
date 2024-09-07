@@ -197,6 +197,43 @@ export const characters: GameConfig = {
       {name: "fh-behold-the-shrouded-sun"},
       {name: "fh-unholy-prowess"},
     ]
+  },
+  "dw": {
+    name: "Deathwalker",
+    cover: "fh-dw-back",
+    maxCards: 11,
+    cards: [
+      {name: "fh-anger-of-the-dead"},
+      {name: "fh-black-barrage"},
+      {name: "fh-call-of-doom"},
+      {name: "fh-call-to-the-abyss"},
+      {name: "fh-dark-fog"},
+      {name: "fh-eclipse"},
+      {name: "fh-fluid-night"},
+      {name: "fh-lingering-rot"},
+      {name: "fh-shadow-step"},
+      {name: "fh-strength-of-the-abyss"},
+      {name: "fh-sunless-apparition"},
+      {name: "fh-forceful-spirits"},
+      {name: "fh-rest-in-the-shade"},
+      {name: "fh-wave-of-anguish"},
+      {name: "fh-deepening-despair"},
+      {name: "fh-restless-spirits"},
+      {name: "fh-dead-bolt"},
+      {name: "fh-ritual-sacrifice"},
+      {name: "fh-fleeting-dusk"},
+      {name: "fh-pulled-across"},
+      {name: "fh-dominate"},
+      {name: "fh-medium"},
+      {name: "fh-the-night-takes-shape"},
+      {name: "fh-vengeful-storm"},
+      {name: "fh-hungry-grasps"},
+      {name: "fh-proliferation-of-the-abyss"},
+      {name: "fh-frozen-in-fear"},
+      {name: "fh-lashing-tendrils"},
+      {name: "fh-black-lance"},
+      {name: "fh-when-your-time-comes"},
+    ]
   }
 
 }

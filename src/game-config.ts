@@ -430,6 +430,44 @@ export const characters: GameConfig = {
     ]
   },
 
+  "sd": {
+    name: "Showdancer",
+    cover: "fh-sd-back",
+    maxCards: 11,
+    cards: [
+      {name: "fh-blizzard"},
+      {name: "fh-chilling-impact"},
+      {name: "fh-cold-therapy"},
+      {name: "fh-cross-winds"},
+      {name: "fh-enticing-breeze"},
+      {name: "fh-frigid-growth"},
+      {name: "fh-gathering-force"},
+      {name: "fh-lifting-gust"},
+      {name: "fh-natures-breath"},
+      {name: "fh-snowball"},
+      {name: "fh-whiteout"},
+      {name: "fh-blinding-vortex"},
+      {name: "fh-the-spirits-call"},
+      {name: "fh-white-winds"},
+      {name: "fh-birds-in-a-tempest"},
+      {name: "fh-tornado"},
+      {name: "fh-cold-snap"},
+      {name: "fh-polar-vortex"},
+      {name: "fh-biting-frost"},
+      {name: "fh-zephyr-barrier"},
+      {name: "fh-shifting-snow"},
+      {name: "fh-whipping-gale"},
+      {name: "fh-frozen-brand"},
+      {name: "fh-refreshing-flurry"},
+      {name: "fh-freezing-storm"},
+      {name: "fh-storm-wall"},
+      {name: "fh-surging-blow"},
+      {name: "fh-the-endless-white"},
+      {name: "fh-snowblind"},
+      {name: "fh-winds-of-change"},
+    ]
+  },
+
 
 }
 

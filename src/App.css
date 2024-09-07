@@ -43,3 +43,23 @@
   width: 180px;
   border-radius: 10px;
 }
+
+@media (min-width:930px) {
+  .card-img {
+    width: 220px;
+  }
+}
+
+@media (min-width:1130px) {
+  .card-img {
+    width: 260px;
+  }
+}
+
+@media (min-width:1300px) {
+  .card-img {
+    width: 280px;
+  }
+}
+
+

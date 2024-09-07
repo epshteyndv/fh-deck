@@ -468,6 +468,40 @@ export const characters: GameConfig = {
     ]
   },
 
-
+  "ta": {
+    name: "Trapper",
+    cover: "fh-ta-back",
+    maxCards: 9,
+    cards: [
+      {name: "fh-boar-catcher"},
+      {name: "fh-caltrops"},
+      {name: "fh-electrified-net"},
+      {name: "fh-enticing-bait"},
+      {name: "fh-exploding-decoy"},
+      {name: "fh-flurry-of-nails"},
+      {name: "fh-furry-facade"},
+      {name: "fh-honeypot"},
+      {name: "fh-spike-pit"},
+      {name: "fh-dismantle"},
+      {name: "fh-improvised-improvement"},
+      {name: "fh-spring-loaded"},
+      {name: "fh-path-of-pain"},
+      {name: "fh-unavoidable-outcome"},
+      {name: "fh-extra-teeth"},
+      {name: "fh-pyrotechnics"},
+      {name: "fh-dangerous-ground"},
+      {name: "fh-stalkers-spoils"},
+      {name: "fh-lure-of-the-snare"},
+      {name: "fh-proficient-hunter"},
+      {name: "fh-cage-of-thorns"},
+      {name: "fh-persistent-pitfalls"},
+      {name: "fh-foxhole"},
+      {name: "fh-grasping-hazards"},
+      {name: "fh-magnetic-shards"},
+      {name: "fh-spike-strip"},
+      {name: "fh-dangerous-cargo"},
+      {name: "fh-mother-of-all-traps"},
+    ]
+  },
 }
 

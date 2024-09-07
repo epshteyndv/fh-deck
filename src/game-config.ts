@@ -347,5 +347,43 @@ export const characters: GameConfig = {
     ]
   },
 
+  "if": {
+    name: "Infuser",
+    cover: "fh-if-back",
+    maxCards: 11,
+    cards: [
+      {name: "fh-boon-of-the-tempest"},
+      {name: "fh-bounty-of-the-earth"},
+      {name: "fh-caress-of-the-night"},
+      {name: "fh-emerald-edge"},
+      {name: "fh-formless-bladestorm"},
+      {name: "fh-onyx-shards"},
+      {name: "fh-rising-momentum"},
+      {name: "fh-slashing-cyclone"},
+      {name: "fh-stoic-vigilance"},
+      {name: "fh-torrential-cleave"},
+      {name: "fh-unstoppable-impulse"},
+      {name: "fh-battle-prowess"},
+      {name: "fh-crystalline-aegis"},
+      {name: "fh-imbue-with-life"},
+      {name: "fh-remote-impact"},
+      {name: "fh-veil-of-protection"},
+      {name: "fh-guide-the-flow"},
+      {name: "fh-reinforced-riposte"},
+      {name: "fh-coalescing-darkness"},
+      {name: "fh-desperate-throw"},
+      {name: "fh-gemstone-resonance"},
+      {name: "fh-obsidian-spear"},
+      {name: "fh-gale-barrage"},
+      {name: "fh-propulsive-tailwind"},
+      {name: "fh-diamondization"},
+      {name: "fh-malachite-shockwave"},
+      {name: "fh-swift-pivot"},
+      {name: "fh-untether-the-shackles"},
+      {name: "fh-ancient-rites-of-power"},
+      {name: "fh-sky-splitting-strike"},
+    ]
+  },
+
 }
 

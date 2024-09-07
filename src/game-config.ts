@@ -159,6 +159,45 @@ export const characters: GameConfig = {
       {name: "fh-fractured-timeline"},
       {name: "fh-reverse-the-flow"},
     ]
+  },
+  "bo": {
+    name: "Boneshaper",
+    cover: "fh-bo-back",
+    maxCards: 12,
+    cards: [
+      {name: "fh-angry-spirits"},
+      {name: "fh-command-the-wretched"},
+      {name: "fh-damned-horde"},
+      {name: "fh-dark-tidings"},
+      {name: "fh-decaying-will"},
+      {name: "fh-eternal-torment"},
+      {name: "fh-fell-remedy"},
+      {name: "fh-flow-of-the-black-river"},
+      {name: "fh-life-in-death"},
+      {name: "fh-malicious-conversion"},
+      {name: "fh-returned-servant"},
+      {name: "fh-transfer-of-essence"},
+      {name: "fh-approach-oblivion"},
+      {name: "fh-exploding-corpse"},
+      {name: "fh-wrath-of-the-turned-earth"},
+      {name: "fh-bone-dagger"},
+      {name: "fh-unearthed-horror"},
+      {name: "fh-grave-digging"},
+      {name: "fh-putrid-cloud"},
+      {name: "fh-critical-failure"},
+      {name: "fh-flesh-shield"},
+      {name: "fh-solid-bones"},
+      {name: "fh-unforgivable-methods"},
+      {name: "fh-rotting-multitude"},
+      {name: "fh-twisted-decree"},
+      {name: "fh-recycled-limbs"},
+      {name: "fh-soul-claim"},
+      {name: "fh-endless-numbers"},
+      {name: "fh-wailing-from-beyond"},
+      {name: "fh-behold-the-shrouded-sun"},
+      {name: "fh-unholy-prowess"},
+    ]
   }
+
 }
 

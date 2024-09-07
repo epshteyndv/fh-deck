@@ -50,6 +50,7 @@ export const characters: GameConfig = {
       {name: "fh-take-no-prisoners"},
     ]
   },
+
   "pc": {
     name: "Pain Conduit",
     cover: "fh-pc-back",
@@ -86,6 +87,7 @@ export const characters: GameConfig = {
       {name: "fh-the-end-of-everything"},
     ]
   },
+
   "df": {
     name: "Drifter",
     cover: "fh-df-back",
@@ -124,6 +126,7 @@ export const characters: GameConfig = {
       {name: "fh-use-every-part"},
     ]
   },
+
   "bb": {
     name: "Blinkblade",
     cover: "fh-bb-back",
@@ -160,6 +163,7 @@ export const characters: GameConfig = {
       {name: "fh-reverse-the-flow"},
     ]
   },
+
   "bo": {
     name: "Boneshaper",
     cover: "fh-bo-back",
@@ -198,6 +202,7 @@ export const characters: GameConfig = {
       {name: "fh-unholy-prowess"},
     ]
   },
+
   "dw": {
     name: "Deathwalker",
     cover: "fh-dw-back",
@@ -235,6 +240,7 @@ export const characters: GameConfig = {
       {name: "fh-when-your-time-comes"},
     ]
   },
+
   "ge": {
     name: "Geminate",
     cover: "fh-ge-back",
@@ -276,6 +282,7 @@ export const characters: GameConfig = {
       {name: "fh-voice-of-salvation"},
     ]
   },
+
   "dt": {
     name: "Deepwraith",
     cover: "fh-dt-back",
@@ -312,6 +319,7 @@ export const characters: GameConfig = {
       {name: "fh-consume-the-helpless"},
     ]
   },
+
   "ff": {
     name: "Frozen Fist",
     cover: "fh-ff-back",
@@ -384,6 +392,44 @@ export const characters: GameConfig = {
       {name: "fh-sky-splitting-strike"},
     ]
   },
+
+  "py": {
+    name: "Pyroclast",
+    cover: "fh-py-back",
+    maxCards: 10,
+    cards: [
+      {name: "fh-cloud-of-ash"},
+      {name: "fh-cooling"},
+      {name: "fh-eruption"},
+      {name: "fh-flowing-fire"},
+      {name: "fh-igneous-path"},
+      {name: "fh-lava-bomb"},
+      {name: "fh-liquid-stone"},
+      {name: "fh-melted-armor"},
+      {name: "fh-quenched-rage"},
+      {name: "fh-under-pressure"},
+      {name: "fh-force-of-the-earth"},
+      {name: "fh-metamorphic-rock"},
+      {name: "fh-wildfire"},
+      {name: "fh-deep-fury"},
+      {name: "fh-searing-smoke"},
+      {name: "fh-hardened-spike"},
+      {name: "fh-living-magma"},
+      {name: "fh-hand-of-flame"},
+      {name: "fh-heat-wave"},
+      {name: "fh-magma-orbs"},
+      {name: "fh-rain-of-fire"},
+      {name: "fh-obsidian-shield"},
+      {name: "fh-return-to-the-source"},
+      {name: "fh-erupting-rage"},
+      {name: "fh-swelter"},
+      {name: "fh-cinder-lance"},
+      {name: "fh-feed-the-beast"},
+      {name: "fh-calamity"},
+      {name: "fh-stone-armor"},
+    ]
+  },
+
 
 }
 

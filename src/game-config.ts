@@ -276,6 +276,42 @@ export const characters: GameConfig = {
       {name: "fh-voice-of-salvation"},
     ]
   },
+  "dt": {
+    name: "Deepwraith",
+    cover: "fh-dt-back",
+    maxCards: 10,
+    cards: [
+      { name: "fh-black-scythe" },
+      { name: "fh-hollow-aura" },
+      { name: "fh-ink-cloud" },
+      { name: "fh-lacerating-stabs" },
+      { name: "fh-mantle-of-dread" },
+      { name: "fh-skewer-the-flesh" },
+      { name: "fh-skull-collection" },
+      { name: "fh-staring-into-the-abyss" },
+      { name: "fh-succumb-to-fear" },
+      { name: "fh-tumultuous-panic" },
+      { name: "fh-haunting-brutality" },
+      { name: "fh-morbid-camouflage" },
+      { name: "fh-soul-hunger" },
+      { name: "fh-lie-in-wait" },
+      { name: "fh-slipping-into-death" },
+      { name: "fh-crippling-terror" },
+      { name: "fh-pinning-spines" },
+      { name: "fh-crushing-darkness" },
+      { name: "fh-grim-trophies" },
+      { name: "fh-death-spiral" },
+      { name: "fh-extra-decoration" },
+      { name: "fh-claw-of-doom" },
+      { name: "fh-the-remorseless-deep" },
+      { name: "fh-dire-frenzy" },
+      { name: "fh-hasten-the-end" },
+      { name: "fh-rip-from-the-bone" },
+      { name: "fh-unseen-horror" },
+      { name: "fh-black-night-of-the-deep" },
+      { name: "fh-consume-the-helpless" },
+    ]
+  },
 
 }
 

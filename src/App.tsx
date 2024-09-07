@@ -17,7 +17,9 @@ function App() {
     <>
       <BuildContext.Provider value={{state, dispatch}}>
         <Header/>
-        {state.isCharacterSelection ? <Characters/> : <Deck/>}
+        <div className={"content"}>
+          {state.isCharacterSelection ? <Characters/> : <Deck/>}
+        </div>
       </BuildContext.Provider>
     </>
   )

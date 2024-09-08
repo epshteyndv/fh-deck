@@ -13,20 +13,6 @@
   margin-right: auto;
 }
 
-@media (min-width:1200px) {
-  .content {
-    max-width: 1280px;
-  }
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5em;
-}
-
 .card {
   cursor: pointer;
 }
@@ -37,21 +23,3 @@
 .inactive-card {
   opacity: 60%;
 }
-
-.card-img {
-  width: 180px;
-  border-radius: 10px;
-}
-
-@media (min-width:550px) {
-  .card-img {
-    width: 240px;
-  }
-}
-
-@media (min-width:730px) {
-  .card-img {
-    width: 280px;
-  }
-}
-

@@ -9,10 +9,12 @@ interface AbilityCardProps {
 
 export const AbilityCard: React.FC<AbilityCardProps> = ({characterId, cardName, isSelected, onSelect}) => {
   return (
-    <div onClick={() => onSelect(cardName)} className={isSelected ? "card active-card" : "card inactive-card"}>
-      <img className={"card-img"}
-           src={`https://raw.githubusercontent.com/epshteyndv/fh-deck/main/public/cards/${characterId}/${cardName}.jpeg`}
-           alt={cardName}/>
+    <div className={"col-6 col-md-3"}>
+      <div onClick={() => onSelect(cardName)} className={isSelected ? "card active-card" : "card inactive-card"}>
+        <img className={"img-fluid"}
+             src={`https://raw.githubusercontent.com/epshteyndv/fh-deck/main/public/cards/${characterId}/${cardName}.jpeg`}
+             alt={cardName}/>
+      </div>
     </div>
   )
 }

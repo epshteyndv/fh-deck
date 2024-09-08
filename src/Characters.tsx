@@ -31,10 +31,12 @@ export const Characters = () => {
   const selectCharacter = (id: string) => dispatch({type: "selectCharacter", value: id});
 
   return (
-    <div className={"cards"}>
-      {selectedCards.map(card =>
-        <AbilityCard key={card.cardName} {...card} onSelect={() => selectCharacter(card.characterId)}/>
-      )}
+    <div className={"container"}>
+      <div className={"row"}>
+        {selectedCards.map(card =>
+          <AbilityCard key={card.cardName} {...card} onSelect={() => selectCharacter(card.characterId)}/>
+        )}
+      </div>
     </div>
   )
 }

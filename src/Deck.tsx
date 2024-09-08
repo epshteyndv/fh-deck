@@ -21,14 +21,16 @@ export const Deck = () => {
   const removeCard = (name: string) => dispatch({type: "removeCard", value: name});
 
   return (
-    <div className={"cards"}>
-      {selectedCards.map(card =>
-        <AbilityCard key={card.name}
-                     characterId={state.characterId}
-                     cardName={card.name}
-                     isSelected={card.isSelected}
-                     onSelect={card.isSelected ? removeCard : addCard}/>
-      )}
+    <div className={"container"}>
+      <div className={"row"}>
+        {selectedCards.map(card =>
+          <AbilityCard key={card.name}
+                       characterId={state.characterId}
+                       cardName={card.name}
+                       isSelected={card.isSelected}
+                       onSelect={card.isSelected ? removeCard : addCard}/>
+        )}
+      </div>
     </div>
   )
 }

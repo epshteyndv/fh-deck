@@ -17,7 +17,7 @@ function App() {
     <>
       <BuildContext.Provider value={{state, dispatch}}>
         <Header/>
-        <div className={"content"}>
+        <div className={"container"} style={{"marginTop": "64px"}}>
           {state.isCharacterSelection ? <Characters/> : <Deck/>}
         </div>
       </BuildContext.Provider>

@@ -1,28 +1,43 @@
-import './App.css'
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import MainLayout from "./MainLayout.tsx";
 import {Deck} from "./Deck.tsx";
+import {Characters} from "./Characters.tsx";
 import {useEffect, useReducer} from "react";
 import {BuildContext, initializeState, reducer} from "./BuildContext.ts";
-import {Header} from "./Header.tsx";
-import {Characters} from "./Characters.tsx";
 
-function App() {
+export const App = () => {
   const [state, dispatch] = useReducer(reducer, null, initializeState);
 
+  console.log("render")
   useEffect(() => {
     localStorage.setItem("character_id", state.characterId);
     localStorage.setItem(`build_${state.characterId}`, JSON.stringify({selectedCards: state.selectedCards}));
   }, [state.characterId, state.selectedCards])
 
+  const router = createBrowserRouter([
+      {
+        path: "/",
+        element: <MainLayout/>,
+        children: [
+          {
+            path: "",
+            element: <Characters/>
+          },
+          {
+            path: ":characterId",
+            element: <Deck/>
+          },
+        ]
+      }
+    ],
+    {basename: '/fh-deck'}
+  );
+
   return (
     <>
       <BuildContext.Provider value={{state, dispatch}}>
-        <Header/>
-        <div className={"container"} style={{"marginTop": "64px"}}>
-          {state.isCharacterSelection ? <Characters/> : <Deck/>}
-        </div>
+        <RouterProvider router={router}/>
       </BuildContext.Provider>
     </>
   )
 }
-
-export default App

@@ -503,5 +503,43 @@ export const characters: GameConfig = {
       {name: "fh-frozen-spike"},
     ]
   },
+
+  "hv": {
+    name: "Hive",
+    cover: "fh-hv-back",
+    maxCards: 11,
+    cards: [
+      {name: "fh-aimed-assault"},
+      {name: "fh-coiled-limbs"},
+      {name: "fh-faceless-entity"},
+      {name: "fh-high-impact-projectiles"},
+      {name: "fh-hunter-killer"},
+      {name: "fh-interference"},
+      {name: "fh-launch-pod"},
+      {name: "fh-plated-defense"},
+      {name: "fh-prepare-for-deployment"},
+      {name: "fh-reaper-function"},
+      {name: "fh-reconstructive-aid"},
+      {name: "fh-reassemble"},
+      {name: "fh-remote-control"},
+      {name: "fh-shocking-pulse"},
+      {name: "fh-force-field"},
+      {name: "fh-long-range-missile"},
+      {name: "fh-hijack"},
+      {name: "fh-rapid-fire"},
+      {name: "fh-divergent-destruction"},
+      {name: "fh-plague-protocol"},
+      {name: "fh-code-geminate"},
+      {name: "fh-net-dispersal"},
+      {name: "fh-spinning-blades"},
+      {name: "fh-triage-program"},
+      {name: "fh-mortar-shells"},
+      {name: "fh-recall"},
+      {name: "fh-burning-slash"},
+      {name: "fh-swarming-bulwark"},
+      {name: "fh-disassemble"},
+      {name: "fh-heavy-metal"}
+    ]
+  }
 }
 

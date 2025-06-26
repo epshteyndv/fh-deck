@@ -1,27 +1,31 @@
 import {useContext} from "react";
 import {BuildContext} from "./BuildContext.ts";
+import {useLocation, useNavigate} from "react-router-dom";
 
 export const Header = () => {
-  const {state, dispatch} = useContext(BuildContext);
+  const {state} = useContext(BuildContext);
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
 
-  const showCharacters = () => dispatch({type: "showCharacters"});
+  const showCharacters = () => navigate("/");
 
   const menuButton = (
     <button className="navbar-toggler shadow-none" type="button" onClick={showCharacters}>
       <span className="navbar-toggler-icon"></span>
     </button>
   );
+
   return (
     <nav className="navbar bg-primary fixed-top" data-bs-theme="dark">
       <div className="container-fluid">
-        {state.isCharacterSelection
+        {pathname === "/"
           ? null
           : menuButton}
         <div className="nav-content">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                {state.isCharacterSelection
+              <a className="nav-link active" aria-current="page" href="">
+                {pathname === "/"
                   ? "Select character"
                   : `${state.characterName} [${state.selectedCards.length} of ${state.maxCards}]`}
               </a>

@@ -6,13 +6,6 @@
   justify-content: center;
 }
 
-.content {
-  max-width: 850px;
-  margin-top: 3em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .card {
   cursor: pointer;
 }
@@ -22,4 +15,8 @@
 
 .inactive-card {
   opacity: 60%;
+}
+
+.card-image {
+  border-radius: 15px;
 }

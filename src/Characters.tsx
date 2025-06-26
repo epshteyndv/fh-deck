@@ -1,16 +1,12 @@
-import {useContext, useEffect, useMemo} from "react";
-import {BuildContext} from "./BuildContext.ts";
 import {AbilityCard} from "./AbilityCard.tsx";
 import {characters} from "./game-config.ts";
+import {useNavigate} from "react-router-dom";
+import {useMemo} from "react";
 
 export const Characters = () => {
-  const {dispatch} = useContext(BuildContext);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const selectedCards = useMemo(
+  const cardViewModels = useMemo(
     () => {
       const cards: { characterId: string, cardName: string, isSelected: boolean }[] = [];
 
@@ -28,12 +24,14 @@ export const Characters = () => {
     }, []
   );
 
-  const selectCharacter = (id: string) => dispatch({type: "selectCharacter", value: id});
+  const selectCharacter = (id: string) => {
+    navigate(`/${id}`);
+  }
 
   return (
     <div className={"container"}>
       <div className={"row"}>
-        {selectedCards.map(card =>
+        {cardViewModels.map(card =>
           <AbilityCard key={card.cardName} {...card} onSelect={() => selectCharacter(card.characterId)}/>
         )}
       </div>

@@ -59,7 +59,7 @@ export function reducer(state: BuildState, action: BuildAction): BuildState {
   }
 }
 
-function getBuildFromStorage(id: string) {
+export function getBuildFromStorage(id: string) {
   return JSON.parse(localStorage.getItem(`build_${id}`) || '{ "selectedCards": [] }');
 }
 

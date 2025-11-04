@@ -615,6 +615,43 @@ export const characters: GameConfig = {
       { "name": "fh-polarity-shift" },
       { "name": "fh-unstable-core.png" }
     ]
+  },
+
+  "sh": {
+    name: "Shards",
+    cover: "fh-sh-back",
+    maxCards: 10,
+    cards: [
+      { "name": "fh-devastating-shout" },
+      { "name": "fh-empowering-pulse" },
+      { "name": "fh-forceful-vibrations" },
+      { "name": "fh-foreboding-tremors" },
+      { "name": "fh-heartening-harmony" },
+      { "name": "fh-lifting-voice" },
+      { "name": "fh-precious-gems" },
+      { "name": "fh-resonant-frequency" },
+      { "name": "fh-sonic-shock" },
+      { "name": "fh-unrelenting-wail" },
+      { "name": "fh-calamitous-yawp" },
+      { "name": "fh-din-of-battle" },
+      { "name": "fh-illuminative-tone" },
+      { "name": "fh-befuddling-bellow" },
+      { "name": "fh-transparency" },
+      { "name": "fh-shape-the-path" },
+      { "name": "fh-stealth-vibrations" },
+      { "name": "fh-concentrated-blast" },
+      { "name": "fh-elemental-pulse" },
+      { "name": "fh-empowering-note" },
+      { "name": "fh-shrieking-chakram" },
+      { "name": "fh-future-sense" },
+      { "name": "fh-unsustainable-wave" },
+      { "name": "fh-cloaking-refraction" },
+      { "name": "fh-sound-therapy" },
+      { "name": "fh-feedback" },
+      { "name": "fh-soft-spots" },
+      { "name": "fh-barbaric-yawp" },
+      { "name": "fh-violent-vibrations.png" },
+    ]
   }
 }
 

@@ -1,4 +1,4 @@
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createHashRouter, RouterProvider} from "react-router-dom";
 import MainLayout from "./MainLayout.tsx";
 import {Deck} from "./Deck.tsx";
 import {Characters} from "./Characters.tsx";
@@ -14,13 +14,12 @@ export const App = () => {
     localStorage.setItem(`build_${state.characterId}`, JSON.stringify({selectedCards: state.selectedCards}));
   }, [state.characterId, state.selectedCards])
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
       {
-        path: "/",
         element: <MainLayout/>,
         children: [
           {
-            path: "",
+            path: "/",
             element: <Characters/>
           },
           {
@@ -29,8 +28,7 @@ export const App = () => {
           },
         ]
       }
-    ],
-    {basename: '/fh-deck'}
+    ]
   );
 
   return (

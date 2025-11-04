@@ -540,6 +540,45 @@ export const characters: GameConfig = {
       {name: "fh-disassemble"},
       {name: "fh-heavy-metal"}
     ]
+  },
+
+  "cr": {
+    name: "Crashing Tide",
+    cover: "fh-cr-back",
+    maxCards: 12,
+    cards: [
+      {"name": "fh-blood-in-the-water.png" },
+      {"name": "fh-chaotic-refraction.png" },
+      {"name": "fh-cleansing-swell.png" },
+      {"name": "fh-clean-sweep.png" },
+      {"name": "fh-crashing-surge.png" },
+      {"name": "fh-cresting-force.png" },
+      {"name": "fh-crush-armor.png" },
+      {"name": "fh-death-on-all-sides.png" },
+      {"name": "fh-down-to-the-depths.png" },
+      {"name": "fh-drown-beneath-the-waves.png" },
+      {"name": "fh-dug-in.png" },
+      {"name": "fh-ebb-and-flow.png" },
+      {"name": "fh-endless-cycle.png" },
+      {"name": "fh-high-tide.png" },
+      {"name": "fh-low-tide.png" },
+      {"name": "fh-mighty-claws.png" },
+      {"name": "fh-overwhelming-wave.png" },
+      {"name": "fh-pool-of-power.png" },
+      {"name": "fh-powerful-pincer.png" },
+      {"name": "fh-rancid-brine.png" },
+      {"name": "fh-rising-flood.png" },
+      {"name": "fh-sharp-chitin.png" },
+      {"name": "fh-shuck.png" },
+      {"name": "fh-skitter.png" },
+      {"name": "fh-smashing-torrent.png" },
+      {"name": "fh-sodden-soil.png" },
+      {"name": "fh-soft-flesh.png" },
+      {"name": "fh-submerge.png" },
+      {"name": "fh-tidal-blast.png" },
+      {"name": "fh-twilight-grasp.png" },
+      {"name": "fh-undertow.pn" },
+    ]
   }
 }
 

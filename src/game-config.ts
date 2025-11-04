@@ -613,7 +613,7 @@ export const characters: GameConfig = {
       { "name": "fh-curious-machinery" },
       { "name": "fh-piston-barrage" },
       { "name": "fh-polarity-shift" },
-      { "name": "fh-unstable-core.png" }
+      { "name": "fh-unstable-core" }
     ]
   },
 
@@ -650,7 +650,7 @@ export const characters: GameConfig = {
       { "name": "fh-feedback" },
       { "name": "fh-soft-spots" },
       { "name": "fh-barbaric-yawp" },
-      { "name": "fh-violent-vibrations.png" },
+      { "name": "fh-violent-vibrations" },
     ]
   }
 }
